@@ -18,7 +18,7 @@
   {{#resume.basics}}
   <div id='nameBlock' class='largeFont'>
     <span class='name'>
-      {{name}}{{#if label}},{{/if}}
+      {{name}}{{#if label}}{{/if}}
     </span>
     {{#if label}}
     <span class='label'>{{label}}</span>
@@ -150,7 +150,7 @@
     <div class='sectionContent'>
       {{#each resume.skills}}
       <div class='skillBlock'>
-        <span class='title'>{{#if name}}{{name}}{{/if}}{{#if level}} <em>({{level}})</em>{{/if}}:</span>
+        <span class='title'>{{#if name}}{{name}}{{/if}}:</span>
         {{#if keywords.length}}
           {{#each keywords}}
           <span>{{.}}</span>{{#unless @last}}, {{/unless}}
